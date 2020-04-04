@@ -21,3 +21,4 @@ def login():
         return redirect(url_for('index'))
 
     return render_template('login.html', **context)
+    
