@@ -10,9 +10,13 @@ class LoginForm(FlaskForm):
 
 
 class TodoForm(FlaskForm):
-    descripcion = StringField('Descripción', validators=[DataRequired()])
+    description = StringField('Descripción', validators=[DataRequired()])
     submit = SubmitField('Crear')
 
 
 class DeleteTodoForm(FlaskForm):
     submit = SubmitField('Borrar')
+
+
+class UpdateTodoForm(FlaskForm):
+    submit = SubmitField('Actualizar')
